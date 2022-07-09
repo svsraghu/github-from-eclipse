@@ -36,7 +36,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>devops-docker</finalName>
+		<finalName>docker-k8s</finalName>
 	</build>
 
 </project>

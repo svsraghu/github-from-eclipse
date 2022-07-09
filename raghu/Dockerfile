@@ -1,4 +1,3 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
-LABEL maintainer="svsrvardhan@gmail.com"
-COPY /target/devops-docker.jar /home/saripalli/git/github-from-eclipse/raghu/devops-docker.jar
-CMD ["java","-jar","/home/saripalli/git/github-from-eclipse/raghu/devops-docker.jar"]
+ADD target/docker-k8s.jar docker-k8s.jar
+ENTRYPOINT ["java","-jar","/docker-k8s.jar"]
